@@ -1,11 +1,11 @@
 {
-  "name": "OpenFang Agent OS",
-  "short_name": "OpenFang",
-  "description": "Open-source Agent Operating System",
+  "name": "Telsi Dashboard",
+  "short_name": "Telsi",
+  "description": "Your Telsi tenant — agents, skills, and integrations.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0a0f",
-  "theme_color": "#6366f1",
+  "background_color": "#15161E",
+  "theme_color": "#F97316",
   "icons": [
     {"src": "/logo.png", "sizes": "128x128", "type": "image/png"}
   ]
