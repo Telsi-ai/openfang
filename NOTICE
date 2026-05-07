@@ -1,0 +1,35 @@
+Telsi Dashboard
+Copyright 2026 Telsi (telsi.ai)
+
+This product is a downstream distribution of OpenFang Agent OS,
+a single-binary Rust agent framework originally developed by RightNow-AI
+and licensed under either the Apache License, Version 2.0 or the MIT
+License at the user's option.
+
+   Upstream:    https://github.com/RightNow-AI/openfang
+   Upstream copyright: Copyright (c) RightNow-AI and OpenFang contributors
+
+Modifications in this distribution
+----------------------------------
+The Telsi distribution differs from upstream OpenFang only in
+customer-facing static dashboard assets located in
+crates/openfang-api/static/ (logo, favicon, manifest, head-tag title,
+literal product-name strings, and theme colors). No source code, no
+public APIs, no on-disk file paths, and no behavioral semantics have
+been altered.
+
+The names "OpenFang", "RightNow-AI", and any associated logos remain
+trademarks of RightNow-AI. Per Apache 2.0 Section 6, this distribution
+does not use those trademarks except as needed to truthfully describe
+the origin of the upstream work in this NOTICE and in source-level
+identifiers (file paths, JS class names, internal API endpoints) that
+are part of the unmodified upstream interface.
+
+The names "Telsi" and any associated logos are trademarks of Telsi
+(telsi.ai) and are applied only to the customer-facing chrome of this
+downstream distribution.
+
+License
+-------
+This work is dual-licensed under the Apache License 2.0 and MIT License,
+matching upstream. See LICENSE-APACHE and LICENSE-MIT for full terms.
