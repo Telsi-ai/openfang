@@ -32,9 +32,9 @@
     <div class="sidebar-header">
       <div class="sidebar-header-text">
         <div class="sidebar-logo">
-          <img src="/logo.png" alt="OpenFang" width="28" height="28">
+          <img src="/logo.png" alt="Telsi" width="28" height="28">
           <div>
-            <h1>OPENFANG</h1>
+            <h1>TELSI</h1>
             <div class="version" x-text="'v' + version"></div>
           </div>
         </div>
@@ -251,7 +251,7 @@
           </div>
           <!-- Onboarding banner -->
           <div class="onboarding-banner" x-show="!loading && !loadError && $store.app.showOnboarding && checklistDismissed">
-            <h3>Welcome to OpenFang</h3>
+            <h3>Welcome to Telsi</h3>
             <p style="font-size:12px;color:var(--text-dim)">Get started quickly with the guided Setup Wizard, or configure manually:</p>
             <div class="flex gap-2">
               <button class="btn btn-primary" @click="location.hash='wizard'">Launch Setup Wizard</button>
@@ -607,7 +607,7 @@
                   <template x-for="(msg, $index) in filteredMessages" :key="msg.id">
                     <div class="message" :class="msg.role + (msg.thinking ? ' thinking' : '') + (msg.streaming ? ' streaming' : '') + (isGrouped($index) ? ' grouped' : '')">
                       <div class="message-avatar" x-show="msg.role === 'agent'">
-                        <img src="/logo.png" alt="OpenFang">
+                        <img src="/logo.png" alt="Telsi">
                       </div>
                       <div class="message-body">
                         <!-- Copy button on hover -->
@@ -738,7 +738,7 @@
                   <span class="recording-dot"></span>
                   <span class="text-xs" style="color:var(--danger)" x-text="formatRecordingTime()"></span>
                 </div>
-                <textarea id="msg-input" rows="1" :placeholder="recording ? 'Recording... release to send' : 'Message OpenFang... (/ for commands)'"
+                <textarea id="msg-input" rows="1" :placeholder="recording ? 'Recording... release to send' : 'Message Telsi... (/ for commands)'"
                           @keydown.enter.prevent="if(!$event.isComposing && $event.keyCode !== 229 && !$event.shiftKey){if(showModelPicker && filteredModelPicker.length){pickModel(filteredModelPicker[modelPickerIdx].id)}else if(showSlashMenu && filteredSlashCommands.length){executeSlashCommand(filteredSlashCommands[slashIdx].cmd)}else{sendMessage()}}"
                           @keydown.escape="showSlashMenu = false; showModelPicker = false"
                           @keydown.arrow-up.prevent="if(showModelPicker){modelPickerIdx = Math.max(0, modelPickerIdx - 1)}else if(showSlashMenu){slashIdx = Math.max(0, slashIdx - 1)}"
@@ -4212,7 +4212,7 @@ args = ["-y", "@modelcontextprotocol/server-filesystem", "/path"]</pre>
                 <input class="form-input" type="text" x-model="sourcePath" placeholder="~/.openclaw" style="font-family:monospace;font-size:12px">
               </div>
               <div class="form-group mt-2">
-                <label>OpenFang Target Directory</label>
+                <label>Telsi Target Directory</label>
                 <input class="form-input" type="text" x-model="targetPath" placeholder="~/.openfang (default)" style="font-family:monospace;font-size:12px">
               </div>
               <div class="flex gap-2 mt-4">
@@ -4935,8 +4935,8 @@ args = ["-y", "@modelcontextprotocol/server-filesystem", "/path"]</pre>
           <!-- Step 1: Welcome -->
           <div class="wizard-step" x-show="step === 1">
             <div class="wizard-card" style="text-align:center;max-width:600px;margin:0 auto">
-              <img src="/logo.png" alt="OpenFang" style="width:80px;height:80px;margin:0 auto 20px;display:block;opacity:0.85">
-              <h3 style="font-size:22px;font-weight:700;margin-bottom:12px;color:var(--accent)">Welcome to OpenFang</h3>
+              <img src="/logo.png" alt="Telsi" style="width:80px;height:80px;margin:0 auto 20px;display:block;opacity:0.85">
+              <h3 style="font-size:22px;font-weight:700;margin-bottom:12px;color:var(--accent)">Welcome to Telsi</h3>
               <p style="font-size:13px;color:var(--text-dim);line-height:1.8;max-width:480px;margin:0 auto 24px">
                 OpenFang is an open-source Agent Operating System. It lets you run AI agents that can chat, use tools, access memory, and connect to messaging channels &mdash; all from a single dashboard.
               </p>
